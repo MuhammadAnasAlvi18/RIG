@@ -1,7 +1,7 @@
 // BANNER SLIDER
 $(".banner-slider").slick({
     dots: false,
-    arrows: true,
+    arrows: false,
     autoplay: true,
     speed: 800
 });
