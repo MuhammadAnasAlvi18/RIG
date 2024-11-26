@@ -1103,8 +1103,94 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 @media only screen and (min-width:768px) and (max-width: 991px) {
 }
 @media only screen and (min-width:992px) and (max-width: 1199px) {
+    .top-bar{padding:12px 80px 12px 120px}
+    .top-bar-left{gap: 40px;}
+    .header{padding:10px 80px 15px}
+    .header-links li a{font-size: 15px;}
+    .header-links{gap: 65px;}
+    .header-link-tel a{width: 45px;height: 45px;}
+    .header-link-tel img{width:18px;height:18px}
+    .banner-slider .slide-content{padding:60px 80px 0}
+    .banner-slider .slide-content h2{max-width:55%;font-size:60px;line-height:65px;margin-bottom:25px}
+    .banner-slider .slide-content p{font-size: 16px;}
+    .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
+    .banner-slider .slick-prev,.banner-slider .slick-next{background-size: 22px;}
+    .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button{font-size: 16px;padding: 16px 50px;}
+    .about-section{padding:80px 80px 120px}
+    .about-head h5{font-size:16px}
+    .about-head h2{font-size: 60px;margin-bottom: 15px;}
+    .about-content p{font-size:16px;line-height:28px;margin-bottom:40px}
+    .floating-banner-content{padding: 10px 80px;}
+    .floating-text h3{width:65%;font-size:45px;line-height:55px}
+    .floating-banner-image img{height: 400px;}
+    .our-values-section{padding:80px 80px 100px}
+    .our-values-head h2{font-size: 60px;margin-bottom: 50px;}
+    .our-value-card h4{font-size: 20px;}
+    .our-value-card p{font-size: 15px;}
+    .services-section{padding:80px 80px 100px}
+    .services-section .our-values-head p{width:70%;text-align:center;font-size:16px;margin-bottom:20px}
+    .services-card{min-height: 365px;}
+    .service-card-img{width: 70px;height: 70px;}
+    .service-card-img img {width:35px;height:35px}
+    .services-card h4{font-size: 22px;}
+    .contact-section{padding: 100px 80px;}
+    .footer{padding: 100px 80px 120px;}
+    .footer-menu h4,.footer-social h4{font-size: 20px;}
+    .footer-menu ul li a,.footer-social ul li a{font-size: 15px;}
+    .footer-text p{font-size: 16px;}
+    .footer-bottom p{font-size: 14px;}
+    .about-content-flex h4{font-size: 28px;}
+    .about-content-flex p{font-size: 16px;line-height: 26px;}
+    .about-content-flex img{height: 500px;}
+    .about-content-flex-img::before{left: 55px;}
+    .about-content-flex-img::after{right: 55px;}
+    .our-team-section{padding: 80px 80px 140px;}
+    .team-member-info h4{font-size: 22px;}
 }
 @media only screen and (min-width:1260px) and (max-width: 1365px) {
+    .top-bar{padding:12px 80px 12px 120px}
+    .top-bar-left{gap: 40px;}
+    .header{padding:10px 80px 15px}
+    .header-links li a{font-size: 15px;}
+    .header-links{gap: 65px;}
+    .header-link-tel a{width: 45px;height: 45px;}
+    .header-link-tel img{width:18px;height:18px}
+    .banner-slider .slide-content{padding:60px 80px 0}
+    .banner-slider .slide-content h2{max-width:55%;font-size:60px;line-height:65px;margin-bottom:25px}
+    .banner-slider .slide-content p{font-size: 16px;}
+    .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
+    .banner-slider .slick-prev,.banner-slider .slick-next{background-size: 22px;}
+    .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button{font-size: 16px;padding: 16px 50px;}
+    .about-section{padding:80px 80px 120px}
+    .about-head h5{font-size:16px}
+    .about-head h2{font-size: 60px;margin-bottom: 15px;}
+    .about-content p{font-size:16px;line-height:28px;margin-bottom:40px}
+    .floating-banner-content{padding: 10px 80px;}
+    .floating-text h3{width:65%;font-size:45px;line-height:55px}
+    .floating-banner-image img{height: 400px;}
+    .our-values-section{padding:80px 80px 100px}
+    .our-values-head h2{font-size: 60px;margin-bottom: 50px;}
+    .our-value-card h4{font-size: 20px;}
+    .our-value-card p{font-size: 15px;}
+    .services-section{padding:80px 80px 100px}
+    .services-section .our-values-head p{width:70%;text-align:center;font-size:16px;margin-bottom:20px}
+    .services-card{min-height: 365px;}
+    .service-card-img{width: 70px;height: 70px;}
+    .service-card-img img {width:35px;height:35px}
+    .services-card h4{font-size: 22px;}
+    .contact-section{padding: 100px 80px;}
+    .footer{padding: 100px 80px 120px;}
+    .footer-menu h4,.footer-social h4{font-size: 20px;}
+    .footer-menu ul li a,.footer-social ul li a{font-size: 15px;}
+    .footer-text p{font-size: 16px;}
+    .footer-bottom p{font-size: 14px;}
+    .about-content-flex h4{font-size: 28px;}
+    .about-content-flex p{font-size: 16px;line-height: 26px;}
+    .about-content-flex img{height: 500px;}
+    .about-content-flex-img::before{left: 55px;}
+    .about-content-flex-img::after{right: 55px;}
+    .our-team-section{padding: 80px 80px 140px;}
+    .team-member-info h4{font-size: 22px;}
 }
 @media only screen and (min-width:1366px) and (max-width: 1439px) {
     .top-bar{padding:12px 80px 12px 120px}
@@ -1122,13 +1208,13 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button{font-size: 16px;padding: 16px 50px;}
     .about-section{padding:80px 80px 120px}
     .about-head h5{font-size:16px}
-    .about-head h2{font-size: 65px;margin-bottom: 15px;}
+    .about-head h2{font-size: 60px;margin-bottom: 15px;}
     .about-content p{font-size:16px;line-height:28px;margin-bottom:40px}
     .floating-banner-content{padding: 10px 80px;}
     .floating-text h3{width:65%;font-size:45px;line-height:55px}
     .floating-banner-image img{height: 400px;}
     .our-values-section{padding:80px 80px 100px}
-    .our-values-head h2{font-size: 65px;margin-bottom: 50px;}
+    .our-values-head h2{font-size: 60px;margin-bottom: 50px;}
     .our-value-card h4{font-size: 20px;}
     .our-value-card p{font-size: 15px;}
     .services-section{padding:80px 80px 100px}
@@ -1152,10 +1238,55 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     .team-member-info h4{font-size: 22px;}
 }
 @media only screen and (min-width: 1440px) and (max-width: 1599px){
+    .top-bar{padding: 12px 100px 12px 140px;}
+    .header{padding: 10px 100px 15px;}
+    .banner-slider .slide-content{padding: 60px 100px 0;}
+    .about-section{padding: 80px 100px 120px;}
+    .floating-banner-content{padding: 10px 100px;}
+    .services-section{padding: 100px 100px 120px;}
+    .footer{padding: 100px 100px 120px;}
+    .our-team-section{padding: 80px 100px 140px;}
+    .contact-section{padding: 100px 100px;}
+    .about-content-flex-img::before{left: 60px;}
+    .about-content-flex-img::after{right: 60px;}
+    .about-head h2,.our-values-head h2{font-size: 60px;}
+    .floating-text h3{font-size: 50px;line-height: 60px;}
+    .services-section .our-values-head p{width: 70%;text-align: center;}
+    .banner-slider .slide-content h2{max-width:50%;font-size:60px;line-height:60px}
 }
 @media only screen and (min-width: 1600px) and (max-width: 1900px) {
+    .top-bar{padding: 12px 150px 12px 190px;}
+    .header{padding: 10px 150px 15px;}
+    .banner-slider .slide-content{padding: 60px 150px 0;}
+    .about-section{padding: 80px 150px 120px;}
+    .floating-banner-content{padding: 10px 150px;}
+    .services-section{padding: 100px 150px 120px;}
+    .footer{padding: 100px 150px 120px;}
+    .our-team-section{padding: 80px 150px 140px;}
+    .contact-section{padding: 100px 150px;}
+    .about-content-flex-img::before{left: 65px;}
+    .about-content-flex-img::after{right: 65px;}
+    .about-head h2,.our-values-head h2{font-size: 70px;}
+    .floating-text h3{font-size: 55px;line-height: 65px;}
+    .services-section .our-values-head p{width: 70%;text-align: center;}
+    .banner-slider .slide-content h2{max-width:60%;font-size:70px;line-height:70px}
 }
 @media only screen and (min-width: 1680px) and (max-width: 1919px){
+    .top-bar{padding: 12px 150px 12px 190px;}
+    .header{padding: 10px 150px 15px;}
+    .banner-slider .slide-content{padding: 60px 150px 0;}
+    .about-section{padding: 80px 150px 120px;}
+    .floating-banner-content{padding: 10px 150px;}
+    .services-section{padding: 100px 150px 120px;}
+    .footer{padding: 100px 150px 120px;}
+    .our-team-section{padding: 80px 150px 140px;}
+    .contact-section{padding: 100px 150px;}
+    .about-content-flex-img::before{left: 65px;}
+    .about-content-flex-img::after{right: 65px;}
+    .about-head h2,.our-values-head h2{font-size: 70px;}
+    .floating-text h3{font-size: 55px;line-height: 65px;}
+    .services-section .our-values-head p{width: 70%;text-align: center;}
+    .banner-slider .slide-content h2{max-width:60%;font-size:70px;line-height:70px}
 }
 @media only screen and (min-width: 2560px) {
 }
