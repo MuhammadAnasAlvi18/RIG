@@ -136,6 +136,10 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     object-fit: contain;
     filter: invert(99%) sepia(99%) saturate(17%) hue-rotate(213deg) brightness(105%) contrast(100%);
 }
+.header-burger{
+    display: none;
+    cursor: pointer;
+}
 /* BANNER SECTION */
 .banner-section{
     width: 100%;
@@ -405,7 +409,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     background: #FFF;
     position: relative;
     border: 2px solid #FFF;
-    box-shadow: 0px 5px 25px rgba(255, 255, 255, 0.4), 0px -2px 10px rgba(255, 255, 255, 0.6);
+    /* box-shadow: 0px 5px 25px rgba(255, 255, 255, 0.4), 0px -2px 10px rgba(255, 255, 255, 0.6); */
 }
 
 .team-member-img {
@@ -436,7 +440,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     /* background: #228fce; */
     background: linear-gradient(90deg, #1d1944, #2291d0, #2380c3);
     border: 2px solid #FFF;
-    box-shadow: 0px 5px 25px rgba(255, 255, 255, 0.4), 0px -2px 10px rgba(255, 255, 255, 0.6);
+    /* box-shadow: 0px 5px 25px rgba(255, 255, 255, 0.4), 0px -2px 10px rgba(255, 255, 255, 0.6); */
 }
 .team-member-info h4{
     color: #FFF;
@@ -445,7 +449,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 }
 .team-member-info p{
     color: #FFF;
-    font-size: 18;
+    font-size: 18px;
     font-weight: 500;
 }
 .social-icons {
@@ -472,7 +476,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     text-transform: uppercase;
     position: relative;
     transition: 0.5s ease-in-out;
-    box-shadow: 0px 5px 25px rgba(255, 255, 255, 0.4), 0px -2px 10px rgba(255, 255, 255, 0.6);
+    /* box-shadow: 0px 5px 25px rgba(255, 255, 255, 0.4), 0px -2px 10px rgba(255, 255, 255, 0.6); */
 }
 .team-member-btn a:hover{
     color: #FFF;
@@ -1093,59 +1097,238 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 /* FOOTER  */
 /* RESPONSIVENESS */
 @media only screen and (min-width: 320px) and (max-width: 529px) {
+    .top-bar{padding:12px 20px 12px 20px;flex-direction: column;gap: 15px;display: none;}
+    .top-bar-left{gap: 10px;flex-direction: column;align-items: flex-start;width: 100%;}
+    .top-bar-right{flex-direction: row;align-items: flex-end;gap: 10px;width: 100%;}
+    .top-bar-right a span{display: none;}
+    .header{padding:10px 30px 15px 20px;top: 0;}
+    .header-logo img{width: 160px;height: 70px;}
+    .header-links li a{font-size: 15px;}
+    .header-links{gap: 50px;display: none;}
+    .header-link-tel a{width: 45px;height: 45px;}
+    .header-link-tel img{width:18px;height:18px}
+    .header-burger{display:block}
+    .banner-slider .slide-content{padding:120px 10px 0}
+    .banner-slider .slide-content h2{max-width:100%;font-size:30px;line-height:35px;margin-bottom:25px}
+    .banner-slider .slide-content p{font-size: 15px;max-width: 100%;}
+    .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
+    .banner-slider .slick-prev,.banner-slider .slick-next{background-size: 22px;}
+    .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button,.team-member-btn a{font-size: 14px;padding: 15px 35px;}
+    .about-section{padding:80px 0px 40px}
+    .about-head{padding: 0;}
+    .about-head h5{font-size:16px}
+    .about-head h2{font-size: 32px;margin-bottom: 15px;}
+    .about-head h2::before{left: -15px;width: 5px;}
+    .about-content p{font-size:16px;line-height:28px;margin-bottom:40px}
+    .floating-banner-content{padding: 10px 10px;}
+    .floating-text h3{width:100%;font-size:22px;line-height:30px}
+    .floating-banner-image img{height: 320px;}
+    .floating-text{flex-direction: column;align-items: flex-start;justify-content: center;gap: 25px;}
+    .our-values-section{padding:80px 80px 100px}
+    .our-values-head h2{font-size: 32px;margin-bottom: 50px;}
+    .our-values-head h2::before{width: 5px;left: -15px;}
+    .our-value-card h4{font-size: 20px;}
+    .our-value-card p{font-size: 15px;}
+    .services-section{padding:80px 0 100px}
+    .services-section .our-values-head p{width:100%;text-align:center;font-size:15px;margin-bottom:20px}
+    .services-card{min-height: 265px;width: 100%;flex-direction: column;align-items: flex-start;padding: 30px 15px;margin: 20px 0 30px;}
+    .service-card-img{width: 70px;height: 70px;margin-left: 0;margin-top: -65px;}
+    .service-card-img img {width:35px;height:35px}
+    .services-card p{font-size: 15px;}
+    .services-card h4{font-size: 20px;}
+    .services-btn{padding: 40px 0 0;}
+    .contact-section{padding: 100px 0 80px;}
+    .footer-logo img{width: 220px;height: 120px;}
+    .footer{padding: 40px 0 120px;}
+    .footer-menu{padding: 30px 0 30px 0;}
+    .footer-menu h4,.footer-social h4{font-size: 19px;}
+    .footer-menu ul li a,.footer-social ul li a{font-size: 15px;}
+    .footer-text p{font-size: 16px;}
+    .footer-bottom p{font-size: 14px;}
+    .about-content-flex{padding-top: 30px;}
+    .about-content-flex h4{font-size: 22px;}
+    .about-content-flex p{font-size: 15px;line-height: 26px;margin-bottom: 20px;}
+    .about-content-flex img{height: 300px;width: 90%;}
+    .about-content-flex-img::before{left: 0px;top: 15px;border-top-width: 4px;border-left-width: 4px;}
+    .about-content-flex-img::after{right: 0px;bottom: 15px;border-bottom-width: 4px;border-right-width: 4px;}
+    .our-team-section{padding: 80px 0 80px;}
+    .our-team-section .our-values-head p{width: 100%;font-size: 15px;}
+    .team-member-img img{height: 420px;}
+    .team-member-info{padding: 20px;width: 90%;}
+    .team-member-info h4{font-size: 20px;}
+    .team-member-info p{font-size: 15px;}
+    .team-member{margin-bottom: 80px;}
+    .marquee-section{padding: 60px 0;}
+    .about-content-flex-img{margin-bottom: 30px;}
+    .team-member-btn{padding: 20px 0 0;}
+    .form-group{margin-bottom: 20px;}
+    .contact-section .our-values-head h2{margin-bottom: 20px;}
+    .goToTopBtn a{right:20px;bottom:70px;width:50px;height:50px}
 }
 @media only screen and (min-width: 375px) and (max-width: 424px) {
 }
 @media only screen and (min-width: 425px) and (max-width: 529px) {
 }
 @media only screen and (min-width: 530px) and (max-width: 767px) {
-}
-@media only screen and (min-width:768px) and (max-width: 991px) {
-}
-@media only screen and (min-width:992px) and (max-width: 1199px) {
-    .top-bar{padding:12px 80px 12px 120px}
-    .top-bar-left{gap: 40px;}
-    .header{padding:10px 80px 15px}
+    .top-bar{padding:12px 20px 12px 20px;flex-direction: row;gap: 15px;display: none;}
+    .top-bar-left{gap: 10px;flex-direction: column;align-items: flex-start;}
+    .top-bar-right{flex-direction: column;align-items: flex-end;gap: 10px;}
+    .header{padding:10px 30px 15px 20px;top: 0;}
     .header-links li a{font-size: 15px;}
-    .header-links{gap: 65px;}
+    .header-links{gap: 50px;display: none;}
     .header-link-tel a{width: 45px;height: 45px;}
     .header-link-tel img{width:18px;height:18px}
-    .banner-slider .slide-content{padding:60px 80px 0}
-    .banner-slider .slide-content h2{max-width:55%;font-size:60px;line-height:65px;margin-bottom:25px}
-    .banner-slider .slide-content p{font-size: 16px;}
+    .header-burger{display:block}
+    .banner-slider .slide-content{padding:120px 20px 0}
+    .banner-slider .slide-content h2{max-width:100%;font-size:45px;line-height:55px;margin-bottom:25px}
+    .banner-slider .slide-content p{font-size: 16px;max-width: 100%;}
     .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
     .banner-slider .slick-prev,.banner-slider .slick-next{background-size: 22px;}
-    .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button{font-size: 16px;padding: 16px 50px;}
-    .about-section{padding:80px 80px 120px}
+    .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button,.team-member-btn a{font-size: 15px;padding: 16px 40px;}
+    .about-section{padding:80px 20px 120px}
+    .about-head{padding: 0;}
     .about-head h5{font-size:16px}
-    .about-head h2{font-size: 60px;margin-bottom: 15px;}
+    .about-head h2{font-size: 45px;margin-bottom: 15px;}
     .about-content p{font-size:16px;line-height:28px;margin-bottom:40px}
-    .floating-banner-content{padding: 10px 80px;}
-    .floating-text h3{width:65%;font-size:45px;line-height:55px}
-    .floating-banner-image img{height: 400px;}
+    .floating-banner-content{padding: 10px 20px;}
+    .floating-text h3{width:100%;font-size:30px;line-height:40px}
+    .floating-banner-image img{height: 320px;}
+    .floating-text{flex-direction: column;align-items: flex-start;justify-content: center;gap: 25px;}
     .our-values-section{padding:80px 80px 100px}
-    .our-values-head h2{font-size: 60px;margin-bottom: 50px;}
+    .our-values-head h2{font-size: 45px;margin-bottom: 50px;}
     .our-value-card h4{font-size: 20px;}
     .our-value-card p{font-size: 15px;}
-    .services-section{padding:80px 80px 100px}
-    .services-section .our-values-head p{width:70%;text-align:center;font-size:16px;margin-bottom:20px}
-    .services-card{min-height: 365px;}
+    .services-section{padding:80px 20px 100px}
+    .services-section .our-values-head p{width:100%;text-align:center;font-size:16px;margin-bottom:20px}
+    .services-card{min-height: 265px;width: 100%;}
     .service-card-img{width: 70px;height: 70px;}
     .service-card-img img {width:35px;height:35px}
     .services-card h4{font-size: 22px;}
-    .contact-section{padding: 100px 80px;}
-    .footer{padding: 100px 80px 120px;}
-    .footer-menu h4,.footer-social h4{font-size: 20px;}
+    .contact-section{padding: 100px 20px;}
+    .footer{padding: 40px 20px 120px;}
+    .footer-menu{padding: 30px 0 30px 0;}
+    .footer-menu h4,.footer-social h4{font-size: 19px;}
+    .footer-menu ul li a,.footer-social ul li a{font-size: 15px;}
+    .footer-text p{font-size: 16px;}
+    .footer-bottom p{font-size: 14px;}
+    .about-content-flex h4{font-size: 28px;}
+    .about-content-flex p{font-size: 16px;line-height: 26px;margin-bottom: 20px;}
+    .about-content-flex img{height: 500px;width: 80%;}
+    .about-content-flex-img::before{left: 10px;}
+    .about-content-flex-img::after{right: 10px;}
+    .our-team-section{padding: 80px 20px 140px;}
+    .our-team-section .our-values-head p{width: 100%;font-size: 16px;}
+    .team-member-img img{height: 420px;}
+    .team-member-info{padding: 20px;}
+    .team-member-info h4{font-size: 20px;}
+    .team-member-info p{font-size: 15px;}
+    .team-member{margin-bottom: 80px;}
+    .marquee-section{padding: 60px 0;}
+    .about-content-flex-img{margin-bottom: 30px;}
+    .team-member-btn{padding: 40px 0 0;}
+}
+@media only screen and (min-width:768px) and (max-width: 991px) {
+    .top-bar{padding:12px 20px 12px 20px;flex-direction: column;gap: 15px;}
+    .top-bar-left{gap: 30px;}
+    .header{padding:10px 30px 15px 20px;top: 75px;}
+    .header-links li a{font-size: 15px;}
+    .header-links{gap: 50px;display: none;}
+    .header-link-tel a{width: 45px;height: 45px;}
+    .header-link-tel img{width:18px;height:18px}
+    .header-burger{display:block}
+    .banner-slider .slide-content{padding:60px 20px 0}
+    .banner-slider .slide-content h2{max-width:100%;font-size:45px;line-height:55px;margin-bottom:25px}
+    .banner-slider .slide-content p{font-size: 16px;max-width: 100%;}
+    .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
+    .banner-slider .slick-prev,.banner-slider .slick-next{background-size: 22px;}
+    .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button,.team-member-btn a{font-size: 16px;padding: 16px 50px;}
+    .about-section{padding:80px 20px 120px}
+    .about-head h5{font-size:16px}
+    .about-head h2{font-size: 45px;margin-bottom: 15px;}
+    .about-content p{font-size:16px;line-height:28px;margin-bottom:40px}
+    .floating-banner-content{padding: 10px 20px;}
+    .floating-text h3{width:100%;font-size:35px;line-height:45px}
+    .floating-banner-image img{height: 320px;}
+    .floating-text{flex-direction: column;align-items: flex-start;justify-content: center;gap: 25px;}
+    .our-values-section{padding:80px 80px 100px}
+    .our-values-head h2{font-size: 45px;margin-bottom: 50px;}
+    .our-value-card h4{font-size: 20px;}
+    .our-value-card p{font-size: 15px;}
+    .services-section{padding:80px 20px 100px}
+    .services-section .our-values-head p{width:100%;text-align:center;font-size:16px;margin-bottom:20px}
+    .services-card{min-height: 265px;width: 100%;}
+    .service-card-img{width: 70px;height: 70px;}
+    .service-card-img img {width:35px;height:35px}
+    .services-card h4{font-size: 22px;}
+    .contact-section{padding: 100px 20px;}
+    .footer{padding: 40px 20px 120px;}
+    .footer-menu{padding: 30px 0 30px 0;}
+    .footer-menu h4,.footer-social h4{font-size: 19px;}
+    .footer-menu ul li a,.footer-social ul li a{font-size: 15px;}
+    .footer-text p{font-size: 16px;}
+    .footer-bottom p{font-size: 14px;}
+    .about-content-flex h4{font-size: 28px;}
+    .about-content-flex p{font-size: 16px;line-height: 26px;}
+    .about-content-flex img{height: 500px;width: 80%;}
+    .about-content-flex-img::before{left: 40px;}
+    .about-content-flex-img::after{right: 40px;}
+    .our-team-section{padding: 80px 20px 140px;}
+    .team-member-img img{height: 420px;}
+    .team-member-info{padding: 20px;}
+    .team-member-info h4{font-size: 20px;}
+    .team-member-info p{font-size: 15px;}
+    .team-member{margin-bottom: 80px;}
+    .marquee-section{padding: 60px 0;}
+    .about-content-flex-img{margin-bottom: 30px;}
+}
+@media only screen and (min-width:992px) and (max-width: 1199px) {
+    .top-bar{padding:12px 20px 12px 20px}
+    .top-bar-left{gap: 30px;}
+    .header{padding:10px 20px 15px}
+    .header-links li a{font-size: 15px;}
+    .header-links{gap: 50px;}
+    .header-link-tel a{width: 45px;height: 45px;}
+    .header-link-tel img{width:18px;height:18px}
+    .banner-slider .slide-content{padding:60px 20px 0}
+    .banner-slider .slide-content h2{max-width:55%;font-size:50px;line-height:55px;margin-bottom:25px}
+    .banner-slider .slide-content p{font-size: 16px;}
+    .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
+    .banner-slider .slick-prev,.banner-slider .slick-next{background-size: 22px;}
+    .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button,.team-member-btn a{font-size: 16px;padding: 16px 50px;}
+    .about-section{padding:80px 20px 120px}
+    .about-head h5{font-size:16px}
+    .about-head h2{font-size: 50px;margin-bottom: 15px;}
+    .about-content p{font-size:16px;line-height:28px;margin-bottom:40px}
+    .floating-banner-content{padding: 10px 20px;}
+    .floating-text h3{width:65%;font-size:35px;line-height:45px}
+    .floating-banner-image img{height: 320px;}
+    .our-values-section{padding:80px 80px 100px}
+    .our-values-head h2{font-size: 50px;margin-bottom: 50px;}
+    .our-value-card h4{font-size: 20px;}
+    .our-value-card p{font-size: 15px;}
+    .services-section{padding:80px 20px 100px}
+    .services-section .our-values-head p{width:70%;text-align:center;font-size:16px;margin-bottom:20px}
+    .services-card{min-height: 265px;width: 48%;}
+    .service-card-img{width: 70px;height: 70px;}
+    .service-card-img img {width:35px;height:35px}
+    .services-card h4{font-size: 22px;}
+    .contact-section{padding: 100px 20px;}
+    .footer{padding: 80px 20px 120px;}
+    .footer-menu h4,.footer-social h4{font-size: 19px;}
     .footer-menu ul li a,.footer-social ul li a{font-size: 15px;}
     .footer-text p{font-size: 16px;}
     .footer-bottom p{font-size: 14px;}
     .about-content-flex h4{font-size: 28px;}
     .about-content-flex p{font-size: 16px;line-height: 26px;}
     .about-content-flex img{height: 500px;}
-    .about-content-flex-img::before{left: 55px;}
-    .about-content-flex-img::after{right: 55px;}
-    .our-team-section{padding: 80px 80px 140px;}
-    .team-member-info h4{font-size: 22px;}
+    .about-content-flex-img::before{left: 40px;}
+    .about-content-flex-img::after{right: 40px;}
+    .our-team-section{padding: 80px 20px 140px;}
+    .team-member-img img{height: 420px;}
+    .team-member-info{padding: 20px;}
+    .team-member-info h4{font-size: 20px;}
+    .team-member-info p{font-size: 15px;}
+    .marquee-section{padding: 60px 0;}
 }
 @media only screen and (min-width:1260px) and (max-width: 1365px) {
     .top-bar{padding:12px 80px 12px 120px}
@@ -1160,7 +1343,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     .banner-slider .slide-content p{font-size: 16px;}
     .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
     .banner-slider .slick-prev,.banner-slider .slick-next{background-size: 22px;}
-    .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button{font-size: 16px;padding: 16px 50px;}
+    .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button,.team-member-btn a{font-size: 16px;padding: 16px 50px;}
     .about-section{padding:80px 80px 120px}
     .about-head h5{font-size:16px}
     .about-head h2{font-size: 60px;margin-bottom: 15px;}
@@ -1191,6 +1374,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     .about-content-flex-img::after{right: 55px;}
     .our-team-section{padding: 80px 80px 140px;}
     .team-member-info h4{font-size: 22px;}
+    .team-member-info p{font-size: 16px;}
 }
 @media only screen and (min-width:1366px) and (max-width: 1439px) {
     .top-bar{padding:12px 80px 12px 120px}
@@ -1205,7 +1389,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     .banner-slider .slide-content p{font-size: 16px;}
     .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
     .banner-slider .slick-prev,.banner-slider .slick-next{background-size: 22px;}
-    .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button{font-size: 16px;padding: 16px 50px;}
+    .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button,.team-member-btn a{font-size: 16px;padding: 16px 50px;}
     .about-section{padding:80px 80px 120px}
     .about-head h5{font-size:16px}
     .about-head h2{font-size: 60px;margin-bottom: 15px;}
@@ -1236,6 +1420,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     .about-content-flex-img::after{right: 55px;}
     .our-team-section{padding: 80px 80px 140px;}
     .team-member-info h4{font-size: 22px;}
+    .team-member-info p{font-size: 16px;}
 }
 @media only screen and (min-width: 1440px) and (max-width: 1599px){
     .top-bar{padding: 12px 100px 12px 140px;}
