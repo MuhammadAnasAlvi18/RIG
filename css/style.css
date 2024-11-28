@@ -4,7 +4,9 @@ body {margin: 0;padding: 0;font-family: "Poppins", sans-serif;}
 a{text-decoration: none;color: inherit;}
 ul {list-style-type: none;margin: 0;padding:0}
 h1,h2,h3,h4,h5,h6,p{margin:0;}
-
+main {
+    padding: 157px 0 0;
+}
 /* Top Bar Styles */
 .top-bar{
     width: 100%;
@@ -221,7 +223,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 180px 0;
+    padding: 0 180px 0;
     z-index: 3;
 }
 .banner-slider .slide-content h2{
@@ -307,13 +309,29 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 /* OUR VALUES SECTION */
 .our-values-section{
     width: 100%;
-    padding: 100px 180px 120px;
-    background-color: #228fce;
-    background-image: url("../images/bg2.webp");
+    padding: 100px 180px 160px;
+    /* background-color: #228fce;
+    background-image: url("../images/bg2.webp"); */
+    background: linear-gradient(90deg, #1d1944, #2291d0, #2380c3), url("../images/bg2.webp");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    background-blend-mode: multiply;
+    background-blend-mode: screen;
+    position: relative;
+}
+.our-values-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.our-values-section .container-fluid{
+    z-index: 3;
+    position: relative;
 }
 .our-values-head{
     width: 100%;
@@ -344,7 +362,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     border: 2px solid #FFF;
     transition: 0.3s ease-in-out;
     padding: 25px 20px;
-    background-color: #228fce;
+    background: linear-gradient(90deg, #1d1944, #2291d0, #2380c3);
 }
 .our-value-card:hover{
     border: 2px solid #FFF;
@@ -352,7 +370,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 .value-card-img{
     width: 60px;
     height: 60px;
-    background-color: #228fce;
+    background: linear-gradient(90deg, #1d1944, #2291d0, #2380c3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1011,6 +1029,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding: 20px 0 0;
 }
 .upload-file-name{
     color: #FFF;
@@ -1170,6 +1189,8 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 /* FOOTER  */
 /* RESPONSIVENESS */
 @media only screen and (min-width: 320px) and (max-width: 529px) {
+    main{padding:95px 0 0}
+    .banner-slider .slide-image img,.banner-section{height: 70vh;}
     .file-form-group{flex-direction: column;padding: 25px 0;}
     .top-bar{padding:12px 20px 12px 20px;flex-direction: column;gap: 15px;display: none;}
     .top-bar-left{gap: 10px;flex-direction: column;align-items: flex-start;width: 100%;}
@@ -1184,7 +1205,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     .header-link-tel a{width: 45px;height: 45px;}
     .header-link-tel img{width:18px;height:18px}
     .header-burger{display:block}
-    .banner-slider .slide-content{padding:120px 10px 0}
+    .banner-slider .slide-content{padding:0 10px 0}
     .banner-slider .slide-content h2{max-width:100%;font-size:30px;line-height:35px;margin-bottom:25px}
     .banner-slider .slide-content p{font-size: 15px;max-width: 100%;}
     .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
@@ -1246,6 +1267,8 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 @media only screen and (min-width: 425px) and (max-width: 529px) {
 }
 @media only screen and (min-width: 530px) and (max-width: 767px) {
+    main{padding:122px 0 0}
+    .banner-slider .slide-image img,.banner-section{height: 70vh;}
     .file-form-group{flex-direction: column;padding: 25px 0;}
     .top-bar{padding:12px 20px 12px 20px;flex-direction: row;gap: 15px;display: none;}
     .top-bar-left{gap: 10px;flex-direction: column;align-items: flex-start;}
@@ -1257,7 +1280,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     .header-link-tel a{width: 45px;height: 45px;}
     .header-link-tel img{width:18px;height:18px}
     .header-burger{display:block}
-    .banner-slider .slide-content{padding:120px 20px 0}
+    .banner-slider .slide-content{padding:0 20px 0}
     .banner-slider .slide-content h2{max-width:100%;font-size:45px;line-height:55px;margin-bottom:25px}
     .banner-slider .slide-content p{font-size: 16px;max-width: 100%;}
     .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
@@ -1306,6 +1329,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     .team-member-btn{padding: 40px 0 0;}
 }
 @media only screen and (min-width:768px) and (max-width: 991px) {
+    main{padding:190px 0 0}
     .top-bar{padding:12px 20px 12px 20px;flex-direction: column;gap: 15px;}
     .top-bar-left{gap: 30px;}
     .header{padding:10px 30px 15px 20px;top: 75px;}
@@ -1315,7 +1339,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     .header-link-tel a{width: 45px;height: 45px;}
     .header-link-tel img{width:18px;height:18px}
     .header-burger{display:block}
-    .banner-slider .slide-content{padding:60px 20px 0}
+    .banner-slider .slide-content{padding:0 20px 0}
     .banner-slider .slide-content h2{max-width:100%;font-size:45px;line-height:55px;margin-bottom:25px}
     .banner-slider .slide-content p{font-size: 16px;max-width: 100%;}
     .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
@@ -1368,7 +1392,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     .header-links{gap: 50px;}
     .header-link-tel a{width: 45px;height: 45px;}
     .header-link-tel img{width:18px;height:18px}
-    .banner-slider .slide-content{padding:60px 20px 0}
+    .banner-slider .slide-content{padding:0 20px 0}
     .banner-slider .slide-content h2{max-width:55%;font-size:50px;line-height:55px;margin-bottom:25px}
     .banner-slider .slide-content p{font-size: 16px;}
     .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
@@ -1417,7 +1441,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     .header-links{gap: 65px;}
     .header-link-tel a{width: 45px;height: 45px;}
     .header-link-tel img{width:18px;height:18px}
-    .banner-slider .slide-content{padding:60px 80px 0}
+    .banner-slider .slide-content{padding:0 80px 0}
     .banner-slider .slide-content h2{max-width:55%;font-size:60px;line-height:65px;margin-bottom:25px}
     .banner-slider .slide-content p{font-size: 16px;}
     .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
@@ -1463,7 +1487,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     .header-links{gap: 65px;}
     .header-link-tel a{width: 45px;height: 45px;}
     .header-link-tel img{width:18px;height:18px}
-    .banner-slider .slide-content{padding:60px 80px 0}
+    .banner-slider .slide-content{padding:0 80px 0}
     .banner-slider .slide-content h2{max-width:55%;font-size:60px;line-height:65px;margin-bottom:25px}
     .banner-slider .slide-content p{font-size: 16px;}
     .banner-slider .slick-next, .banner-slider .slick-prev{width: 60px;height: 60px;}
@@ -1504,7 +1528,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 @media only screen and (min-width: 1440px) and (max-width: 1599px){
     .top-bar{padding: 12px 100px 12px 140px;}
     .header{padding: 10px 100px 15px;}
-    .banner-slider .slide-content{padding: 60px 100px 0;}
+    .banner-slider .slide-content{padding: 0 100px 0;}
     .about-section{padding: 80px 100px 120px;}
     .floating-banner-content{padding: 10px 100px;}
     .services-section{padding: 100px 100px 120px;}
@@ -1521,7 +1545,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 @media only screen and (min-width: 1600px) and (max-width: 1900px) {
     .top-bar{padding: 12px 150px 12px 190px;}
     .header{padding: 10px 150px 15px;}
-    .banner-slider .slide-content{padding: 60px 150px 0;}
+    .banner-slider .slide-content{padding: 0 150px 0;}
     .about-section{padding: 80px 150px 120px;}
     .floating-banner-content{padding: 10px 150px;}
     .services-section{padding: 100px 150px 120px;}
@@ -1538,7 +1562,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 @media only screen and (min-width: 1680px) and (max-width: 1919px){
     .top-bar{padding: 12px 150px 12px 190px;}
     .header{padding: 10px 150px 15px;}
-    .banner-slider .slide-content{padding: 60px 150px 0;}
+    .banner-slider .slide-content{padding: 0 150px 0;}
     .about-section{padding: 80px 150px 120px;}
     .floating-banner-content{padding: 10px 150px;}
     .services-section{padding: 100px 150px 120px;}
