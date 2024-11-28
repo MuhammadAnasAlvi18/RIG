@@ -25,6 +25,22 @@
             <div class="header-burger">
                 <img src="./images/burger.png" alt="burger">
             </div>
+            <div class="header-mobile">
+                <div class="header-close-btn"><img src="./images/close.png" alt="img"></div>
+                <div class="header-mobile-overlay"></div>
+                <div class="header-mobile-inner">
+                    <div class="header-logo">
+                        <a href="#"><img src="./images/logo.png" alt="logo" class="img-fluid"></a>
+                    </div>
+                    <ul class="header-mobile-links header-links">
+                        <li><a href="javascript:void(0)" class="active">Home</a></li>
+                        <li><a href="javascript:void(0)">About</a></li>
+                        <li><a href="javascript:void(0)">Services</a></li>
+                        <li><a href="javascript:void(0)">Contact</a></li>
+                        <li class="header-link-tel"><a href="tel:123"><img src="./images/phone-black.png" alt=""></a> Let's Talk</li>
+                    </ul>
+                </div>
+            </div>
         </header>
         <section class="top-bar">
             <div class="top-bar-left">
@@ -357,21 +373,15 @@
             <div class="contact-form-main">
                 <div class="container-fluid">
                     <div class="our-values-head">
-                        <h2>Contact Us</h2>
+                        <h2>Get a Qoute</h2>
                     </div>
                     <div class="contact-form">
                          <form>
                          <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="fname">First Name</label>
+                                    <label for="fname">Full Name</label>
                                     <input type="text" id="fname" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="lname">Last Name</label>
-                                    <input type="text" id="lname" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -380,16 +390,11 @@
                                     <input type="text" id="email" required>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="text" id="phone" required>
-                                </div>
-                            </div>
                             <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" id="message" rows="6"></textarea>
+                                <div class="form-group file-form-group">
+                                    <label for="attachment"><img src="./images/upload.png" alt="upload"> Upload File</label>
+                                    <span class="upload-file-name"></span>
+                                    <input type="file" name="attachment" id="attachment">
                                 </div>
                             </div>
                             <div class="col-md-12">
