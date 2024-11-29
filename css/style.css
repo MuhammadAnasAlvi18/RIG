@@ -1175,6 +1175,19 @@ main {
     align-items: center;
     gap: 20px;
 }
+/* FAQ  */
+.faqs-section{
+    width: 100%;
+    padding: 60px 180px 100px;
+    background: linear-gradient(90deg, #1d1944, #2291d0, #2380c3);
+}
+.faqs-section .accordion-button:not(.collapsed){
+    background: linear-gradient(90deg, #1d1944, #2291d0, #2380c3);
+    color: #FFF;
+    box-shadow: none;
+    border: 1px solid #FFF;
+}
+/* FAQ  */
 @keyframes gradientAnimation {
     0% {
       background-position: 0% 50%;
@@ -1185,7 +1198,7 @@ main {
     100% {
       background-position: 0% 50%;
     }
-  }
+}
 /* FOOTER  */
 /* RESPONSIVENESS */
 @media only screen and (min-width: 320px) and (max-width: 529px) {
