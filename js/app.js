@@ -33,3 +33,29 @@ $("#attachment").change((e)=>{
   const fileName = file.name;
   $(".upload-file-name").text(fileName);
 })
+// FILE UPLOAD
+// TEAM SLIDER
+$(".team-slider").slick({
+  dots: false,
+  arrows: false,
+  autoplay: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  speed:800,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+  ]
+});
