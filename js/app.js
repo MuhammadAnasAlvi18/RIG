@@ -59,3 +59,5 @@ $(".team-slider").slick({
     },
   ]
 });
+// AOS ANIMATION
+  AOS.init();

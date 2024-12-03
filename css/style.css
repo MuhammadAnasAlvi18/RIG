@@ -6,6 +6,7 @@ ul {list-style-type: none;margin: 0;padding:0}
 h1,h2,h3,h4,h5,h6,p{margin:0;}
 main {
     padding: 157px 0 0;
+    overflow-x: clip;
 }
 /* Top Bar Styles */
 .top-bar{
@@ -1240,6 +1241,11 @@ main {
     color: #228fce;
 }
 /* FAQ  */
+/* SERVICES PAGE */
+.contact-section.services-page-section {
+    background: url("../images/BN2.jpg") no-repeat center / cover;
+}
+/* SERVICES PAGE */
 @keyframes gradientAnimation {
     0% {
       background-position: 0% 50%;
@@ -1278,7 +1284,7 @@ main {
     .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button,.team-member-btn a{font-size: 14px;padding: 15px 35px;}
     .about-section{padding:80px 0px 40px}
     .about-head{padding: 0;}
-    .about-head h5{font-size:16px}
+    .about-head h5{font-size:15px}
     .about-head h2{font-size: 32px;margin-bottom: 15px;}
     .about-head h2::before{left: -15px;width: 5px;}
     .about-content p{font-size:16px;line-height:28px;margin-bottom:40px}
@@ -1286,7 +1292,7 @@ main {
     .floating-text h3{width:100%;font-size:22px;line-height:30px}
     .floating-banner-image img{height: 320px;}
     .floating-text{flex-direction: column;align-items: flex-start;justify-content: center;gap: 25px;}
-    .our-values-section{padding:80px 80px 100px}
+    .our-values-section{padding:80px 0 100px}
     .our-values-head h2{font-size: 32px;margin-bottom: 50px;}
     .our-values-head h2::before{width: 5px;left: -15px;}
     .our-value-card h4{font-size: 20px;}
@@ -1326,6 +1332,10 @@ main {
     .form-group{margin-bottom: 20px;}
     .contact-section .our-values-head h2{margin-bottom: 20px;}
     .goToTopBtn a{right:20px;bottom:70px;width:50px;height:50px}
+    .our-values-content .row{row-gap: 50px;}
+    .faqs-section{padding: 60px 0 100px;}
+    .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{font-size: 16px;}
+    .accordion-button::after{width:15px;height:15px;background-size:15px}
 }
 @media only screen and (min-width: 375px) and (max-width: 424px) {
 }
@@ -1360,7 +1370,7 @@ main {
     .floating-text h3{width:100%;font-size:30px;line-height:40px}
     .floating-banner-image img{height: 320px;}
     .floating-text{flex-direction: column;align-items: flex-start;justify-content: center;gap: 25px;}
-    .our-values-section{padding:80px 80px 100px}
+    .our-values-section{padding:80px 20px 100px}
     .our-values-head h2{font-size: 45px;margin-bottom: 50px;}
     .our-value-card h4{font-size: 20px;}
     .our-value-card p{font-size: 15px;}
@@ -1392,6 +1402,10 @@ main {
     .marquee-section{padding: 60px 0;}
     .about-content-flex-img{margin-bottom: 30px;}
     .team-member-btn{padding: 40px 0 0;}
+    .our-values-content .row{row-gap: 50px;}
+    .faqs-section{padding: 60px 20px 100px;}
+    .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{font-size: 16px;}
+    .accordion-button::after{width:15px;height:15px;background-size:15px}
 }
 @media only screen and (min-width:768px) and (max-width: 991px) {
     main{padding:190px 0 0}
@@ -1418,7 +1432,7 @@ main {
     .floating-text h3{width:100%;font-size:35px;line-height:45px}
     .floating-banner-image img{height: 320px;}
     .floating-text{flex-direction: column;align-items: flex-start;justify-content: center;gap: 25px;}
-    .our-values-section{padding:80px 80px 100px}
+    .our-values-section{padding:80px 20px 100px}
     .our-values-head h2{font-size: 45px;margin-bottom: 50px;}
     .our-value-card h4{font-size: 20px;}
     .our-value-card p{font-size: 15px;}
@@ -1448,6 +1462,9 @@ main {
     .team-member{margin-bottom: 80px;}
     .marquee-section{padding: 60px 0;}
     .about-content-flex-img{margin-bottom: 30px;}
+    .our-values-content .row{row-gap: 50px;}
+    .faqs-section{padding: 60px 20px 100px;}
+    .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{font-size: 18px;}
 }
 @media only screen and (min-width:992px) and (max-width: 1199px) {
     .top-bar{padding:12px 20px 12px 20px}
@@ -1470,7 +1487,7 @@ main {
     .floating-banner-content{padding: 10px 20px;}
     .floating-text h3{width:65%;font-size:35px;line-height:45px}
     .floating-banner-image img{height: 320px;}
-    .our-values-section{padding:80px 80px 100px}
+    .our-values-section{padding:80px 20px 100px}
     .our-values-head h2{font-size: 50px;margin-bottom: 50px;}
     .our-value-card h4{font-size: 20px;}
     .our-value-card p{font-size: 15px;}
@@ -1497,8 +1514,11 @@ main {
     .team-member-info h4{font-size: 20px;}
     .team-member-info p{font-size: 15px;}
     .marquee-section{padding: 60px 0;}
+    .our-values-content .row{row-gap: 50px;}
+    .faqs-section{padding: 60px 20px 100px;}
+    .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{font-size: 18px;}
 }
-@media only screen and (min-width:1260px) and (max-width: 1365px) {
+@media only screen and (min-width:1200px) and (max-width: 1365px) {
     .top-bar{padding:12px 80px 12px 120px}
     .top-bar-left{gap: 40px;}
     .header{padding:10px 80px 15px}
@@ -1543,6 +1563,8 @@ main {
     .our-team-section{padding: 80px 80px 140px;}
     .team-member-info h4{font-size: 22px;}
     .team-member-info p{font-size: 16px;}
+    .faqs-section{padding: 60px 80px 100px;}
+    .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{font-size: 18px;}
 }
 @media only screen and (min-width:1366px) and (max-width: 1439px) {
     .top-bar{padding:12px 80px 12px 120px}
