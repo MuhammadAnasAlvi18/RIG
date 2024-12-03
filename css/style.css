@@ -1258,6 +1258,9 @@ main {
     }
 }
 /* FOOTER  */
+.download-btn{
+    margin-top: 20px;
+}
 /* RESPONSIVENESS */
 @media only screen and (min-width: 320px) and (max-width: 529px) {
     main{padding:95px 0 0}
@@ -1363,6 +1366,7 @@ main {
     .banner-slider .slide-content a,.about-content a,.floating-text a,.services-btn a,.form-btn button,.team-member-btn a{font-size: 15px;padding: 16px 40px;}
     .about-section{padding:80px 20px 120px}
     .about-head{padding: 0;}
+    .about-head:has(.download-btn){padding-top:60px}
     .about-head h5{font-size:16px}
     .about-head h2{font-size: 45px;margin-bottom: 15px;}
     .about-content p{font-size:16px;line-height:28px;margin-bottom:40px}
