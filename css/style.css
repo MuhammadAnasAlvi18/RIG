@@ -897,6 +897,10 @@ main {
     display: flex;
     justify-content: center;
 }
+.home-ab-btn{
+    padding-top: 30px;
+    justify-content: flex-start;
+}
 .services-btn a{
     font-size: 18px;
     font-weight: 600;
@@ -910,6 +914,10 @@ main {
     background-size: 300% 300%;
     transition: all 0.3s ease;
     animation: gradientAnimation 4s infinite;
+}
+.home-ab-btn a{
+    background: #FFF;
+    color: #228fce;
 }
 .services-btn a span{
     isolation: isolate;
