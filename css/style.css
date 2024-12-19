@@ -1374,6 +1374,7 @@ main {
 @media only screen and (min-width: 320px) and (max-width: 529px) {
     main{padding:95px 0 0}
     .banner-slider .slide-image img,.banner-section{height: 70vh;}
+    .about-banner-section.banner-section,.about-banner-section.banner-section .banner-slider .slide-image img{height: 100vh;}
     .file-form-group{flex-direction: column;padding: 25px 0;}
     .top-bar{padding:12px 20px 12px 20px;flex-direction: column;gap: 15px;display: none;}
     .top-bar-left{gap: 10px;flex-direction: column;align-items: flex-start;width: 100%;}
@@ -1460,6 +1461,7 @@ main {
 @media only screen and (min-width: 530px) and (max-width: 767px) {
     main{padding:122px 0 0}
     .banner-slider .slide-image img,.banner-section{height: 70vh;}
+    .about-banner-section.banner-section,.about-banner-section.banner-section .banner-slider .slide-image img{height: 100vh;}
     .file-form-group{flex-direction: column;padding: 25px 0;}
     .top-bar{padding:12px 20px 12px 20px;flex-direction: row;gap: 15px;display: none;}
     .top-bar-left{gap: 10px;flex-direction: column;align-items: flex-start;}
