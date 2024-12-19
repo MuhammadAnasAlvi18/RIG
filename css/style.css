@@ -467,6 +467,21 @@ main {
     font-size: 18px;
     font-weight: 500;
 }
+.contact-section .our-values-head{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-section .our-values-head h2{
+    margin-bottom: 20px;
+}
+.contact-section .our-values-head p{
+    color: #FFF;
+    width: 70%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
 .team-members-wrapper{
     padding: 60px 0 0;
 }
@@ -849,6 +864,9 @@ main {
     gap: 30px;
     border: 3px solid #CCCCCC;
 }
+.services-page-section .services-card{
+    width: 100% !important;
+}
 .services-section .our-values-head{
     flex-direction: column;
     align-items: center;
@@ -887,9 +905,17 @@ main {
     margin-bottom: 10px;
 }
 .services-card p{
+    width: 100%;
     font-size: 16px;
     font-weight: 500;
     color: #FFF;
+}
+
+.home-services-cards-wrapper .services-card p{
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .services-btn{
     padding: 120px 0 0;
@@ -994,6 +1020,12 @@ main {
     transition: 0.3s ease;
     resize: none;
     position: relative;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+    color: #181614d5;
+    font-size: 15px;
+    font-weight: 400;
 }
 .form-group::before{
     content: "";
@@ -1121,7 +1153,7 @@ main {
     transition: 0.3s ease-in-out;
     position: relative;
 }
-.footer-menu ul li a::before{
+/* .footer-menu ul li a::before{
     content: "";
     width: 0;
     height: 3px;
@@ -1135,7 +1167,8 @@ main {
 .footer-menu ul li a.active::before{
     width: 100%;
 }
-.footer-menu ul li a:hover,
+ */
+ .footer-menu ul li a:hover,
 .footer-menu ul li a.active{
     color: #228fce
 }
@@ -1269,6 +1302,74 @@ main {
 .download-btn{
     margin-top: 20px;
 }
+/* Section Padding */
+.section-padding {
+    background: linear-gradient(90deg, #1d1944, #2291d0, #2380c3);
+    color: white;
+    padding: 0 180px 60px;
+  }
+
+  /* Title and Sub-Title Styling */
+  .section-title {
+    color: white;
+    font-size: 42px; 
+    font-weight: 600;
+    margin-bottom: 20px; 
+    padding-top: 60px;
+  }
+
+  .subsection-title {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+  }
+
+  /* Text and List Styling */
+  .section-description {
+    color: white;
+    font-size: 18px; 
+    font-weight: 500;
+    line-height: 1.6; 
+    margin-bottom: 20px;
+  }
+
+  .inspection-list {
+    padding-left: 20px;
+    font-size: 18px;
+    list-style: disc;
+  }
+
+  .inspection-list li {
+    margin: 10px 0;
+  }
+  
+  .inspection-list li span{
+    font-weight: 600;
+  }
+
+  /* Table Styling */
+  .inspection-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .inspection-table th, .inspection-table td {
+    border: 1px solid #fff;
+    padding: 12px;
+    text-align: left;
+  }
+
+  .inspection-table th {
+    background-color: #1d1944;
+  }
+
+  .inspection-table td {
+    /* background-color: #2380c3; */
+    font-weight: 500;
+  }
 /* RESPONSIVENESS */
 @media only screen and (min-width: 320px) and (max-width: 529px) {
     main{padding:95px 0 0}
@@ -1309,6 +1410,10 @@ main {
     .our-value-card h4{font-size: 20px;}
     .our-value-card p{font-size: 15px;}
     .services-section{padding:80px 0 100px}
+    .section-padding{padding: 0 0 60px;}
+    .section-title{font-size: 30px;padding-top: 35px;}
+    .subsection-title{font-size: 18px;}
+    .section-description,.inspection-list{font-size: 15px;}
     .services-section .our-values-head p{width:100%;text-align:center;font-size:15px;margin-bottom:20px}
     .services-card{min-height: 265px;width: 100%;flex-direction: column;align-items: flex-start;padding: 30px 15px;margin: 20px 0 30px;}
     .service-card-img{width: 70px;height: 70px;margin-left: 0;margin-top: -65px;}
@@ -1387,6 +1492,10 @@ main {
     .our-value-card h4{font-size: 20px;}
     .our-value-card p{font-size: 15px;}
     .services-section{padding:80px 20px 100px}
+    .section-padding{padding: 0 20px 60px;}
+    .section-title{font-size: 32px;padding-top: 35px;}
+    .subsection-title{font-size: 20px;}
+    .section-description,.inspection-list{font-size: 16px;}
     .services-section .our-values-head p{width:100%;text-align:center;font-size:16px;margin-bottom:20px}
     .services-card{min-height: 265px;width: 100%;}
     .service-card-img{width: 70px;height: 70px;}
@@ -1449,6 +1558,10 @@ main {
     .our-value-card h4{font-size: 20px;}
     .our-value-card p{font-size: 15px;}
     .services-section{padding:80px 20px 100px}
+    .section-padding{padding: 0 20px 60px;}
+    .section-title{font-size: 32px;padding-top: 35px;}
+    .subsection-title{font-size: 22px;}
+    .section-description,.inspection-list{font-size: 16px;}
     .services-section .our-values-head p{width:100%;text-align:center;font-size:16px;margin-bottom:20px}
     .services-card{min-height: 265px;width: 100%;}
     .service-card-img{width: 70px;height: 70px;}
@@ -1504,6 +1617,10 @@ main {
     .our-value-card h4{font-size: 20px;}
     .our-value-card p{font-size: 15px;}
     .services-section{padding:80px 20px 100px}
+    .section-padding{padding: 0 20px 60px;}
+    .section-title{font-size: 36px;padding-top: 35px;}
+    .subsection-title{font-size: 24px;}
+    .section-description,.inspection-list{font-size: 16px;}
     .services-section .our-values-head p{width:70%;text-align:center;font-size:16px;margin-bottom:20px}
     .services-card{min-height: 265px;width: 48%;}
     .service-card-img{width: 70px;height: 70px;}
@@ -1556,8 +1673,12 @@ main {
     .our-value-card h4{font-size: 20px;}
     .our-value-card p{font-size: 15px;}
     .services-section{padding:80px 80px 100px}
+    .section-padding{padding: 0 80px 60px;}
+    .section-title{font-size: 40px;}
+    .subsection-title{font-size: 26px;}
+    .section-description,.inspection-list{font-size: 17px;}
     .services-section .our-values-head p{width:70%;text-align:center;font-size:16px;margin-bottom:20px}
-    .services-card{min-height: 365px;}
+    /* .services-card{min-height: 365px;} */
     .service-card-img{width: 70px;height: 70px;}
     .service-card-img img {width:35px;height:35px}
     .services-card h4{font-size: 22px;}
@@ -1604,8 +1725,12 @@ main {
     .our-value-card h4{font-size: 20px;}
     .our-value-card p{font-size: 15px;}
     .services-section{padding:80px 80px 100px}
+    .section-padding{padding: 0 80px 60px;}
+    .section-title{font-size: 40px;}
+    .subsection-title{font-size: 26px;}
+    .section-description,.inspection-list{font-size: 17px;}
     .services-section .our-values-head p{width:70%;text-align:center;font-size:16px;margin-bottom:20px}
-    .services-card{min-height: 365px;}
+    /* .services-card{min-height: 365px;} */
     .service-card-img{width: 70px;height: 70px;}
     .service-card-img img {width:35px;height:35px}
     .services-card h4{font-size: 22px;}
@@ -1633,6 +1758,7 @@ main {
     .about-section{padding: 80px 100px 120px;}
     .floating-banner-content{padding: 10px 100px;}
     .services-section{padding: 100px 100px 120px;}
+    .section-padding{padding: 0 100px 60px;}
     .footer{padding: 100px 100px 120px;}
     .our-team-section{padding: 80px 100px 140px;}
     .contact-section{padding: 100px 100px;}
@@ -1652,6 +1778,7 @@ main {
     .about-section{padding: 80px 150px 120px;}
     .floating-banner-content{padding: 10px 150px;}
     .services-section{padding: 100px 150px 120px;}
+    .section-padding{padding: 0 150px 60px;}
     .footer{padding: 100px 150px 120px;}
     .our-team-section{padding: 80px 150px 140px;}
     .contact-section{padding: 100px 150px;}
@@ -1671,6 +1798,7 @@ main {
     .about-section{padding: 80px 150px 120px;}
     .floating-banner-content{padding: 10px 150px;}
     .services-section{padding: 100px 150px 120px;}
+    .section-padding{padding: 0 150px 60px;}
     .footer{padding: 100px 150px 120px;}
     .our-team-section{padding: 80px 150px 140px;}
     .contact-section{padding: 100px 150px;}
