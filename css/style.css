@@ -1302,6 +1302,15 @@ main {
 .download-btn{
     margin-top: 20px;
 }
+.footer-certifications{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 10px;
+}
+.footer-certifications img{
+    width: 33%;
+}
 /* Section Padding */
 .section-padding {
     background: linear-gradient(90deg, #1d1944, #2291d0, #2380c3);
