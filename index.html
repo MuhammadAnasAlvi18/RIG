@@ -21,7 +21,7 @@
                 <li><a href="/about-us.html">About</a></li>
                 <li><a href="/services.html">Services</a></li>
                 <li><a href="/contact-us.html">Contact</a></li>
-                <li class="header-link-tel"><a href="tel:123"><img src="./images/phone-black.png" alt=""></a> Let's Talk</li>
+                <li class="header-link-tel"><a href="https://wa.me/07891722049" target="_blank"><img src="./images/phone-black.png" alt=""></a> Let's Talk</li>
             </ul>
             <div class="header-burger">
                 <img src="./images/burger.png" alt="burger">
@@ -38,7 +38,7 @@
                         <li><a href="/about-us.html">About</a></li>
                         <li><a href="/services.html">Services</a></li>
                         <li><a href="/contact-us.html">Contact</a></li>
-                        <li class="header-link-tel"><a href="tel:123"><img src="./images/phone-black.png" alt=""></a> Let's Talk</li>
+                        <li class="header-link-tel"><a href="https://wa.me/07891722049" target="_blank"><img src="./images/phone-black.png" alt=""></a> Let's Talk</li>
                     </ul>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                     <div class="slide-content" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Global Reach & Local Expertise</h2>
                         <p>Based in the UK, we serve industries across the globe and bring local insights to every project.</p>
-                        <a href="/about-us.html"><span>DISCOVER MORE</span></a>
+                        <a href="/contact-us.html"><span>DISCOVER MORE</span></a>
                     </div>
                 </div>
                 <div class="banner-slides">
@@ -96,7 +96,7 @@
                     <div class="slide-content" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Unmatched Expertise</h2>
                         <p>Our team of inspectors combines years of experience with advanced inspection techniques.</p>
-                        <a href="/about-us.html"><span>DISCOVER MORE</span></a>
+                        <a href="#our-team"><span>DISCOVER MORE</span></a>
                     </div>
                 </div>
                 <div class="banner-slides">
@@ -107,7 +107,7 @@
                     <div class="slide-content" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Detailed Solutions</h2>
                         <p>Our services cover all your critical operational needs from onshore, and offshore rigs to plant machinery.</p>
-                        <a href="/about-us.html"><span>DISCOVER MORE</span></a>
+                        <a href="/services.html"><span>DISCOVER MORE</span></a>
                     </div>
                 </div>
                 <div class="banner-slides">
@@ -118,7 +118,7 @@
                     <div class="slide-content" data-aos="fade-up" data-aos-duration="1000">
                         <h2>24/7 Support</h2>
                         <p>You are never alone with RIWS. Our team is always ready to help you to ensure smooth and safe operations.</p>
-                        <a href="/about-us.html"><span>DISCOVER MORE</span></a>
+                        <a href="/contact-us.html"><span>DISCOVER MORE</span></a>
                     </div>
                 </div>
             </div>
@@ -239,11 +239,13 @@
                 </div>
             </div>
         </section>
-        <section class="our-team-section">
+        <section class="our-team-section" id="our-team">
             <div class="container-fluid">
                 <div class="our-values-head" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Our Team</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ipsa minus corrupti ad odit aliquid exercitationem accusantium eius omnis aliquam?</p>
+                    <p>Certified professionals with decades of expertise,
+                        delivering precision and reliability in every project.
+                        Ensuring safety, compliance, and operational excellence.</p>
                 </div>
                 <div class="team-members-wrapper" data-aos="fade-left" data-aos-duration="1000">
                     <div class="team-slider">
@@ -327,41 +329,41 @@
                         <h2>Get a Qoute</h2>
                     </div>
                     <div class="contact-form">
-                         <form>
+                         <form action="./qoute.php" method="POST" enctype="multipart/form-data">
                          <div class="row" data-aos="fade-up" data-aos-duration="1000">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="fname">First Name</label>
-                                    <input type="text" id="fname" required>
+                                    <input type="text" id="fname" name="first_name" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="lname">Last Name</label>
-                                    <input type="text" id="lname" required>
+                                    <input type="text" id="lname" name="last_name" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="email">Email Address</label>
-                                    <input type="text" id="email" required>
+                                    <input type="text" id="email" name="email" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="phone">Phone Number</label>
-                                    <input type="number" id="phone" required>
+                                    <input type="number" id="phone" name="phone" required>
                                 </div>
                             </div>
                             <div class="col-md-12" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="form-group file-form-group">
                                     <label for="attachment"><img src="./images/upload.png" alt="upload"> Upload File</label>
                                     <span class="upload-file-name"></span>
-                                    <input type="file" name="attachment" id="attachment">
+                                    <input type="file" name="file" id="attachment">
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="g-recaptcha" id="rcaptcha"  data-sitekey="6Ld7QZEqAAAAAIi3w3i8CjXzpR5l8pM8vUn5USM7"></div>
+                                <div class="g-recaptcha" id="rcaptcha"  data-sitekey="6LfMFaoqAAAAAPp0sy87iPjn7pVOBY2N6mUyuuTX"></div>
                                 <span id="captcha" style="color:red"></span>
                             </div>
                             <div class="col-md-12" data-aos="fade-up" data-aos-duration="1000">

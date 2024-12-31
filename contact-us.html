@@ -21,7 +21,7 @@
                 <li><a href="/about-us.html">About</a></li>
                 <li><a href="/services.html">Services</a></li>
                 <li><a href="/contact-us.html" class="active">Contact</a></li>
-                <li class="header-link-tel"><a href="tel:123"><img src="./images/phone-black.png" alt=""></a> Let's Talk</li>
+                <li class="header-link-tel"><a href="https://wa.me/07891722049" target="_blank"><img src="./images/phone-black.png" alt=""></a> Let's Talk</li>
             </ul>
             <div class="header-burger">
                 <img src="./images/burger.png" alt="burger">
@@ -38,7 +38,7 @@
                         <li><a href="/about-us.html">About</a></li>
                         <li><a href="/services.html">Services</a></li>
                         <li><a href="/contact-us.html" class="active">Contact</a></li>
-                        <li class="header-link-tel"><a href="tel:123"><img src="./images/phone-black.png" alt=""></a> Let's Talk</li>
+                        <li class="header-link-tel"><a href="https://wa.me/07891722049" target="_blank"><img src="./images/phone-black.png" alt=""></a> Let's Talk</li>
                     </ul>
                 </div>
             </div>
@@ -73,49 +73,50 @@
                         <p>Ready to improve the safety and efficiency of your operations? Contact us today to discuss how RIWS Inspection & Certification Services can support your business.</p>
                     </div>
                     <div class="contact-form" data-aos="fade-up" data-aos-duration="1000">
-                        <form>
-                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="fname">Full Name</label>
-                                    <input type="text" id="fname" placeholder="Enter Your Full Name" required>
+                        <form action="./contact_form.php" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="fname">Full Name</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Enter Your Full Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="address">Address</label>
+                                        <input type="text" id="address" name="address" placeholder="Enter Your Physical Address" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="number" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="message" placeholder="Enter Your Message" rows="8" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="g-recaptcha" id="rcaptcha" data-sitekey="6LfMFaoqAAAAAPp0sy87iPjn7pVOBY2N6mUyuuTX"></div>
+                                    <span id="captcha" style="color:red"></span>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-btn">
+                                        <button type="submit"><span>Submit</span></button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <input type="text" id="email" placeholder="Enter Your Email Address" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="address">Address</label>
-                                    <input type="text" id="address" placeholder="Enter Your Physical Address" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="number" id="phone" placeholder="Enter Your Phone Number" required>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" id="message" placeholder="Enter Your Message" rows="8" required></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="g-recaptcha" id="rcaptcha"  data-sitekey="6Ld7QZEqAAAAAIi3w3i8CjXzpR5l8pM8vUn5USM7"></div>
-                                <span id="captcha" style="color:red"></span>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-btn">
-                                    <button type="submit"><span>Submit</span></button>
-                                </div>
-                            </div>
-                         </div>
                         </form>
+                        
                     </div>
                 </div>
             </div>
